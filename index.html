@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <title>Javascript Todo Tracker</title>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="title-wrapper">
+        <h1>Todo Tracker</h1>
+      </div>
+    </div>
+
+    <!-- FORM SECTION -->
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="form-wrapper">
+          <form action="" class="form">
+            <div class="form__inputs-group">
+              <label for="description">Description:</label>
+              <input
+                type="text"
+                id="description"
+                name="description"
+                autocomplete="off"
+                placeholder="Describe the issuse..."
+              />
+            </div>
+            <div class="form__inputs-group">
+              <div class="form__inputs-group">
+                <label for="serverity">Serverity:</label>
+                <select id="serverity" name="serverity">
+                  <option value="low">Low</option>
+                  <option value="medium">Medium</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__btn-group form__btn-group--end">
+              <button type="submit" class="btn btn--primary" id="add-button">
+                Add
+              </button>
+            </div>
+          </form>
+
+          <hr />
+
+          <!-- FORM OPTIONS SECTION -->
+          <div class="form-options">
+            <div class="form-options__header">
+              <h2>List Todo</h2>
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search by description"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-options__main">
+              <div class="option-group">
+                <p>Filter</p>
+                <div class="option-group__group-btn">
+                  <button class="btn btn--primary" data-filter="all">
+                    All
+                  </button>
+                  <button class="btn btn--success" data-filter="open">
+                    Open
+                  </button>
+                  <button class="btn btn--secondary" data-filter="close">
+                    Close
+                  </button>
+                </div>
+              </div>
+              <div class="option-group">
+                <p>Order By:</p>
+                <select id="sort" name="sort">
+                  <option value="asc">ASC</option>
+                  <option value="desc">DESC</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD LIST SECTION -->
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="card-wrapper" id="card-wrapper"></div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* REUSABLE COMPONENTS */
+.outer-container {
+  max-width: 100vw;
+  margin-bottom: 2rem;
+}
+
+.inner-container {
+  width: 75%; /* 3/4 width of outer-container */
+  padding: 2rem;
+  margin: auto; /* center the container */
+}
+
+.form__inputs-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-group {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1.2rem 3.2rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+
+.card-wrapper {
+  padding: 4rem;
+  margin: auto;
+}
+
+/* MODIFIERS */
+.form__btn-group--end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 2rem;
+}
+
+.option-group__button--card {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.btn--primary,
+.card-status--low,
+.card-serverity--low {
+  color: white;
+  background-color: #24a0ed;
+}
+
+.btn--secondary,
+.card-status--close {
+  color: white;
+  background-color: #6c757d;
+}
+
+.btn--success,
+.card-status--open {
+  color: white;
+  background-color: #28a745;
+}
+
+.btn--danger,
+.card-status--high,
+.card-serverity--high {
+  color: white;
+  background-color: #dc3545;
+}
+
+.card-status--medium,
+.card-serverity--medium {
+  color: white;
+  background-color: #ffc107;
+}
+
+.card-header--light {
+  background-color: #f5f5f5;
+}
+
+.message--error {
+  color: #dc3545;
+}
+
+/* LAYOUTS */
+.title-wrapper {
+  text-align: center;
+}
+
+.title-wrapper h1 {
+  font-size: 4.5rem;
+}
+
+.form-wrapper {
+  padding: 4rem;
+  margin: auto;
+}
+
+.form__inputs-group label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.form__inputs-group input,
+.form__inputs-group select {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.form__inputs-group .message {
+  font-size: 1.6rem;
+  padding-bottom: 0.8rem;
+}
+
+.form-options {
+  margin-top: 2rem;
+}
+
+.form-options__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-options__header h2 {
+  font-size: 3rem;
+}
+
+.form-options__header input {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.option-group p {
+  width: 20%;
+  font-size: 2rem;
+  margin-right: 3rem;
+}
+
+.option-group select {
+  font-size: 2rem;
+  padding: 1.2rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card__header {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.card__main {
+  padding: 1rem;
+}
+
+.card__header p {
+  display: inline-block;
+  max-width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  margin-right: 2rem;
+}
+
+.card__main p {
+  max-width: fit-content;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.card-status {
+  margin-left: 1.2rem;
+}
+
+.card-status,
+.card-serverity {
+  border-radius: 1rem;
+  padding: 0.1rem 0.6rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.card__btn-group {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.card__btn-group button {
+  margin-left: 2rem;
+}
